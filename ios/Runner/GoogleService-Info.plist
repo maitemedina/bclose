@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>121974561874-ucfhbg8k2h07cuc0uvuns0kcecgpqmj8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.121974561874-ucfhbg8k2h07cuc0uvuns0kcecgpqmj8</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>121974561874-5vmkuj93uiukpoict9qetc2rijlvumjk.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDJYnZ9tEmaapDV9YgGqScT5Moyj4F5jHE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>121974561874</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pt.bclose.bhealth</string>
+	<key>PROJECT_ID</key>
+	<string>bhealth-bclose</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bhealth-bclose.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:121974561874:ios:9d929ed2a5b9685757d38b</string>
+	<key>DATABASE_URL</key>
+	<string>https://bhealth-bclose.firebaseio.com</string>
+</dict>
+</plist>

@@ -27,3 +27,11 @@ linter:
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/assets/launcher/auth_ui_logo.png"
+#  adaptive_icon_background: "lib/assets/launcher/ic_launcher.png"
+#  adaptive_icon_foreground: "lib/assets/launcher/ic_launcher.png"

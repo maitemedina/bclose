@@ -1,34 +1,54 @@
 name: bclose
-description: Bclose
+description: Bhealth
 
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+
+version: 2.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations: # Add this line
+    sdk: flutter
+  get: ^4.1.4
+  table_calendar: ^3.0.2
+  http: ^0.13.3
+  shared_preferences: ^2.0.5
+  i18n_extension: ^4.1.1
+#  social Media
+#  firebase_core: ^1.1.1
+#  firebase_crashlytics: ^2.2.0
+#  flutter_facebook_login: ^3.0.0
+#  firebase_auth: ^3.0.2
+#  google_sign_in: ^5.0.3
+  jitsi_meet: ^4.0.0
+  sign_in_with_apple: ^3.0.0
+  flutter_blue: ^0.8.0
+  image_picker: ^0.8.3+3
+  url_launcher: ^6.0.9
+  flutter_share: ^2.0.0
+  screenshot: ^1.2.3
+#  path_provider: ^2.0.0
+#  esys_flutter_share: ^1.0.2
+  image_gallery_saver: '^1.6.9'
+  syncfusion_flutter_calendar: ^19.2.59
+  flutter_datetime_picker: ^1.5.1
+  syncfusion_flutter_charts: ^19.2.60
+  file_picker: ^4.0.1
+  cloud_firestore: ^2.5.1
+  location: ^4.3.0
+  barcode_scan: ^2.0.2
+  webview_flutter: ^2.0.13
+  qr_flutter:
+    git:
+      url: git://github.com/lukef/qr.flutter.git
+
+  flutter_launcher_icons: ^0.9.2
+  flutter_native_splash: ^1.2.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,6 +58,26 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  email_validator: ^2.0.1
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/assets/launcher/auth_ui_logo.png"
+#  adaptive_icon_background: "lib/assets/launcher/ic_launcher.png"
+#  adaptive_icon_foreground: "lib/assets/launcher/ic_launcher.png"
+
+flutter_native_splash:
+  image: "lib/assets/launcher/designaçao.png"
+  color: '#B7F216'
+  fullscreen: true
+  android_gravity: center
+  ios: false
+
+
+
+#  json_serializable: 3.5.1
+#  build_runner: ^1.11.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -56,11 +96,78 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - packages/bclose/assets/icons/ic_bclose_256.png
+    - packages/bclose/assets/icons/ic_logo_face.png
+    - packages/bclose/assets/icons/ic_logo.png
+    - packages/bclose/assets/icons/ic_logo_google.png
+    - packages/bclose/assets/icons/ic_botao_ligar.png
+    - packages/bclose/assets/icons/ic_blue_foto.png
+    - packages/bclose/assets/icons/ic_anexar.png
+    - packages/bclose/assets/icons/ic_filmar.png
+    - packages/bclose/assets/icons/ic_chat_msgs.png
+    - packages/bclose/assets/icons/ic_chat.png
+    - packages/bclose/assets/icons/ic_videochamada.png
+    - packages/bclose/assets/icons/ic_editar_perfil.png
+    - packages/bclose/assets/icons/ic_ver_documentos.png
+    - packages/bclose/assets/icons/ic_anexar_ficheiro.png
+    - packages/bclose/assets/icons/ic_criar_perfil_foto.png
+    - packages/bclose/assets/icons/ic_logo_apple.png
+    - packages/bclose/assets/icons/ic_logo_completo.jpeg
+    - packages/bclose/assets/icons/ic_bg_parceiros.png
+    - packages/bclose/assets/icons/ic_logo_designaçao.png
+    - packages/bclose/assets/icons/ic_sem_medico.png
+    - packages/bclose/assets/icons/ic_medicamentos.png
+    - packages/bclose/assets/icons/ic_create_documento.png
+    - packages/bclose/assets/icons/ic_logo_bclose_wtext.png
+    - packages/bclose/assets/icons/ic_bg_device.png
+    - packages/bclose/assets/icons/ic_gree_fotografia.png
+    - packages/bclose/assets/icons/ic_gree_interrogacao.png
+    - packages/bclose/assets/icons/ic_gree_partilhar.png
+    - packages/bclose/assets/icons/ic_mais_dispositivpo.png
+    - packages/bclose/assets/icons/ic_horas1.png
+    - packages/bclose/assets/icons/ic_horas2.png
+    - packages/bclose/assets/icons/ic_certo.png
+    - packages/bclose/assets/icons/ic_sem_doc.png
+    - packages/bclose/assets/icons/ic_genre_M.png
+    - packages/bclose/assets/icons/ic_genre_H.png
+    - packages/bclose/assets/icons/ic_campainha.png
+    - packages/bclose/assets/icons/ic_seta.png
+    - packages/bclose/assets/icons/ic_accept.png
+    - packages/bclose/assets/icons/ic_decline.png
+
+    - packages/bclose/assets/tabBar/ic_alerta.png
+    - packages/bclose/assets/tabBar/ic_calender.png
+    - packages/bclose/assets/tabBar/ic_sos.png
+    - packages/bclose/assets/tabBar/ic_pessoa.png
+    - packages/bclose/assets/tabBar/ic_my_bclose.png
+    - packages/bclose/assets/tabBar/ic_home.png
+    - packages/bclose/assets/tabBar/ic_home_b.png
+    - packages/bclose/assets/images/pub.jpeg
+      # device Images
+    - packages/bclose/assets/device/ic_device_balanca.png
+    - packages/bclose/assets/device/ic_device_oximetro.png
+    - packages/bclose/assets/device/ic_device_fit_band.png
+    - packages/bclose/assets/device/ic_pressao.png
+    - packages/bclose/assets/device/ic_bola_graficos.png
+    - packages/bclose/assets/device/ic_grafico_pi.png
+    - packages/bclose/assets/device/ic_coraçao_pulso.png
+    - packages/bclose/assets/device/ic_start.png
+    - packages/bclose/assets/device/ic_termometro.png
+    - packages/bclose/assets/device/ic_comprar.png
+    - packages/bclose/assets/device/ic_emparelhar.png
+    - packages/bclose/assets/device/ic_informaçao.png
+    - packages/bclose/assets/device/ic_oximetro.png
+    - packages/bclose/assets/device/ic_temp.png
+    - packages/bclose/assets/device/ic_img_termometro.png
+    - packages/bclose/assets/device/ic_back.png
+    - packages/bclose/assets/device/ic_foto_pressao.png
+    - packages/bclose/assets/device/ic_grafico_pressao_arterial.png
+
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+#  assets:
+#    - assets/images/icons/ic_bclose_256.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -87,3 +194,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  # buil apk ==  build apk --split-per-abi --no-sound-null-safety
